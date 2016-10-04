@@ -5,7 +5,8 @@ function getTodos(res) {
 
         // if there is an error retrieving, send the error. nothing after res.send(err) will execute
         if (err) {
-            res.send(err);
+            console.log(err);
+            return res.send(err);
         }
 
         res.json(todos); // return all todos in JSON format
@@ -30,7 +31,7 @@ module.exports = function (app) {
             done: false
         }, function (err, todo) {
             if (err)
-                res.send(err);
+                return res.send(err);
 
             // get and return all the todos after you create another
             getTodos(res);
@@ -44,7 +45,7 @@ module.exports = function (app) {
             _id: req.params.todo_id
         }, function (err, todo) {
             if (err)
-                res.send(err);
+                return res.send(err);
 
             getTodos(res);
         });
