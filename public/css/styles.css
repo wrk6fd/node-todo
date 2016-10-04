@@ -1,0 +1,43 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    /*https://abidanshah.com/2014/12/23/christmas-lights-in-a-minute/*/
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/christmas-lights.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/christmas-lights.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 18px;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.row {
+    max-width: 960px;
+}
+
+#todo-list {
+    margin-bottom: 30px;
+}
+
+.item {
+    background-color: rgba(235, 235 , 235, 0.8);
+    color: #222;
+}
+
+.red {
+    color: #f22e3e;
+}
+.green {
+    color: #1c903c;
+}
+
+#todo-form {
+    margin-bottom: 50px;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
